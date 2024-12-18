@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/buttonColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@drawable/background_card"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchProduct"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="#EFEFEF"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:drawablePadding="8dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Tìm kiếm sản phẩm"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <ImageView
+                android:id="@+id/giohang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:contentDescription="Notification"
+                android:src="@drawable/baseline_shopping_cart_24" />
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="1dp"/>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circle_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            app:ci_drawable="@drawable/bg_indicator"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="2dp"
+            >
+
+            <!-- Danh mục 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/category_item_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoryImage1"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/image7"
+                    android:contentDescription="Category Image 1" />
+
+                <TextView
+                    android:id="@+id/categoryName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pizza"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Danh mục 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/category_item_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoryImage2"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/image6"
+                    android:contentDescription="Category Image 2" />
+
+                <TextView
+                    android:id="@+id/categoryName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Chicken"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Danh mục 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/category_item_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoryImage3"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/image5"
+                    android:contentDescription="Category Image 3" />
+
+                <TextView
+                    android:id="@+id/categoryName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Hamburger"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Danh mục 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/category_item_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/categoryImage4"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/image4"
+                    android:contentDescription="Category Image 4" />
+
+                <TextView
+                    android:id="@+id/categoryName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Drink"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/RerecyclerViewSP"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.527"
+                app:layout_constraintStart_toStartOf="@+id/RerecyclerViewSP"
+                app:layout_constraintTop_toTopOf="@+id/RerecyclerViewSP" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RerecyclerViewSP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppFood</string>
+    <string name="app_name_1">AppFood</string>
+
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_noi_bat">Nổi bật</string>
+    <string name="nav_gio_hang">Giỏ hàng</string>
+    <string name="nav_profile">Hồ sơ</string>
+    <string name="nav_loai_san_pham">Loại sản phẩm</string>
+    <string name="nav_san_pham">Sản phẩm</string>
+    <string name="nav_thanh_toan">Đặt hàng</string>
+    <string name="add_item">Thêm sản phẩm</string>
+
+    <string name="policy_privacy">Đây là nội dung của chính sách bảo mật. Mọi thông tin cá nhân sẽ được bảo vệ nghiêm ngặt.</string>
+    <string name="policy_regulation">Đây là nội dung quy chế. Vui lòng tuân thủ các quy định được đưa ra.</string>
+    <string name="policy_terms">Đây là nội dung điều khoản sử dụng. Việc sử dụng ứng dụng đồng nghĩa với việc chấp nhận điều khoản này.</string>
+    <string name="policy_dispute">Đây là nội dung chính sách giải quyết tranh chấp. Chúng tôi cam kết giải quyết tranh chấp nhanh chóng và công bằng.</string>
+</resources>

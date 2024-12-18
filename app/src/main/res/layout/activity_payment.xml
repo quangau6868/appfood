@@ -1,0 +1,57 @@
+<!-- activity_payment.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvPaymentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Thanh Toán"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phương thức thanh toán: N/A"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="4dp"
+        android:paddingBottom="7dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái: Đang xử lý..."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="4dp"
+        android:paddingBottom="7dp"/>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoàn Thành"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

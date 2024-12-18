@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi thường gặp"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- Thanh danh mục với các tùy chọn -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Các nút danh mục -->
+            <Button
+                android:id="@+id/btnGoiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gợi ý"
+                android:backgroundTint="#FF5722"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnDatDoAn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặt đồ ăn và Đi chợ"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#000000"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnDatGiaoHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đặt giao hàng"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#000000"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnKhuyenMai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khuyến mãi"
+                android:backgroundTint="#EEEEEE"
+                android:textColor="#000000"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="8dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Danh sách câu hỏi thường gặp -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/faqRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

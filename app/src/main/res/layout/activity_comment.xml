@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá sản phẩm"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="6dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvTenSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên SP: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- TextView hiển thị tên người -->
+    <TextView
+        android:id="@+id/tvTenNguoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên người: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- TextView để hiển thị ngày đánh giá -->
+    <TextView
+        android:id="@+id/tvNgayDanhGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày đánh giá: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- EditText cho ngày đánh giá -->
+    <EditText
+        android:id="@+id/etNgayDanhGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chọn ngày đánh giá"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="date" />
+
+    <!-- TextView hiển thị tổng tiền -->
+    <TextView
+        android:id="@+id/tvTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- TextView cho thông điệp trước RatingBar -->
+    <TextView
+        android:id="@+id/tvMessageRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng chọn chất lượng sản phẩm"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <!-- RatingBar cho chọn sao đánh giá -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView cho thông điệp trước EditText -->
+    <TextView
+        android:id="@+id/tvMessageComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng chia sẻ nhận xét cho sản phẩm này nhé bạn"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:paddingBottom="8dp" />
+
+    <!-- EditText cho nội dung đánh giá -->
+    <EditText
+        android:id="@+id/etNoiDungDanhGia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập nội dung đánh giá"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:gravity="top|start"
+        android:padding="8dp" />
+
+    <!-- Button Đánh giá -->
+    <Button
+        android:id="@+id/btnDanhGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:text="Đánh giá"
+        android:textColor="@color/black"
+        android:background="@color/orange"
+        android:textSize="16sp" />
+</LinearLayout>

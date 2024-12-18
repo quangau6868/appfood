@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <!-- RecyclerView để hiển thị tin nhắn -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- EditText để nhập phản hồi -->
+    <android.widget.EditText
+        android:id="@+id/edtAdminMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập phản hồi..."
+        android:padding="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="text"/>
+
+    <!-- Nút Gửi phản hồi -->
+    <android.widget.Button
+        android:id="@+id/btnSendAdminMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi Phản Hồi"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

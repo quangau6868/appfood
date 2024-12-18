@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_card"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xin chào,"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nguyen Van A"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="nguyenvana@example.com"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="User Image"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_hoa_don"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:text="Đơn hàng"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_chinh_sach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:text="Chính sách quy định"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_danh_gia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:text="Trung tâm trợ giúp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_update_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Đổi mật khẩu"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Fanpage"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_chia_se"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chia sẻ ứng dụng"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_ve_toi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Về AppFood"
+            android:drawableEnd="@drawable/baseline_chevron_right_24"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Thêm TextView cho phiên bản dưới nút Đăng xuất -->
+        <TextView
+            android:id="@+id/text_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Đây là phiên bản 1.0"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

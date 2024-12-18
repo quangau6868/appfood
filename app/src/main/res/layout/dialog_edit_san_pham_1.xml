@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ImageView để chọn hình ảnh -->
+        <ImageView
+            android:id="@+id/imgHinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="ImageView"
+            android:scaleType="centerCrop" />
+
+        <!-- Mã Loại -->
+        <EditText
+            android:id="@+id/etMaLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Mã Loại"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <!-- Tên Sản Phẩm -->
+        <EditText
+            android:id="@+id/etTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Tên Sản Phẩm"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <!-- Giá Bán -->
+        <EditText
+            android:id="@+id/etGiaBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Giá Bán"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <!-- Mô Tả -->
+        <EditText
+            android:id="@+id/etMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Mô Tả"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <!-- Trạng thái hàng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbConHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Còn Hàng"
+                android:layout_marginEnd="20dp"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbHetHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hết Hàng"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Button Lưu -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/orange"
+            android:layout_marginTop="10dp" />
+
+        <!-- Button Hủy -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChinhSachActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <!-- Nút quay lại -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/white_radius"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- TextView "Chi tiết món ăn" -->
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Chính sách quy định"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_chinh_sach_bao_mat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/baseline_chevron_right_24"
+        android:text="Chính sách bảo mật"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_quy_che"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/baseline_chevron_right_24"
+        android:text="Quy chế"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_dieu_khoan_su_dung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/baseline_chevron_right_24"
+        android:text="Điều khoán sử dụng"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_chinh_sach_giai_quyet_tranh_chap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/baseline_chevron_right_24"
+        android:text="Chính sách giải quyết tranh chấp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#14274E"
+    android:padding="16dp">
+
+    <!-- TextView: Welcome Back -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng trở lại!"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- TextView: Login to continue -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập để tiếp tục"
+        android:textSize="14sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EditText: Username -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:hint="Vui lòng nhập Email"
+        android:textColorHint="#B2A394"
+        android:textSize="14sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- EditText: Password -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:hint="Vui lòng nhập mât khẩu"
+        android:inputType="textPassword"
+        android:textColorHint="#B2A394"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- CheckBox: Remember me -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxShowPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hiện mật khẩu"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#DCC5A4" />
+
+        <TextView
+            android:id="@+id/loginForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textColor="#DCC5A4"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- Button: Login -->
+    <Button
+        android:id="@+id/loginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView: Sign Up -->
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa có tài khoản? Đăng ký"
+        android:textColor="#DCC5A4"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Màu nền -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/gray" /> <!-- Viền ngoài -->
+    <corners android:radius="8dp" /> <!-- Bo tròn góc -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" /> <!-- Khoảng cách bên trong -->
+</shape>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/nav_home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/nav_noi_bat"
+        android:title="@string/nav_noi_bat"
+        android:icon="@drawable/baseline_brightness_auto_24"/>
+
+    <item
+        android:id="@+id/nav_gio_hang"
+        android:title="@string/nav_gio_hang"
+        android:icon="@drawable/baseline_shopping_cart_24"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/nav_profile"
+        android:icon="@drawable/baseline_person_24"/>
+
+
+</menu>

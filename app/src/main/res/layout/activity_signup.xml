@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14274E"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView: Welcome Back -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="Đăng kí"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- TextView: Login to continue -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Tạo tài khoản ngay bây giờ"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp" />
+
+    <!-- EditText: Username -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:hint="Vui lòng nhập Email"
+        android:padding="12dp"
+        android:textColorHint="#B2A394"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/signupUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:hint="Vui lòng nhập tên"
+        android:padding="12dp"
+        android:textColorHint="#B2A394"
+        android:textSize="14sp" />
+
+    <!-- EditText: Password -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:hint="Vui lòng nhập mât khẩu"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="#B2A394"
+        android:textSize="14sp" />
+
+    <!-- CheckBox: Remember me -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxShowPassword1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hiện mật khẩu"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#DCC5A4" />
+
+
+    </LinearLayout>
+
+    <!-- Button: Login -->
+    <Button
+        android:id="@+id/signupBTN"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:text="ĐĂNG KÍ"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <!-- TextView: Sign Up -->
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Bạn đã có tài khoản? Đăng nhập"
+        android:textColor="#DCC5A4" />
+</LinearLayout>
